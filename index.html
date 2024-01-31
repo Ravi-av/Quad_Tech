@@ -1,175 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <title>Quad tech</title>
-  </head>
 
-  <body>
-    <div class="navbar">
-      <div id="hod"><img src="public/hodlinfo_logo.png" alt="" /></div>
-      <div id="drop-dwn">
-        <select>
-          <option value="option1" id="option">INR</option>
-        </select>
-        <select>
-          <option value="option1" id="option">BTC</option>
-        </select>
-        <select>
-          <option value="option1" id="option">BUY BTC</option>
-        </select>
-      </div>
-      <div class="toggle-container">
-        <div class="toggle-btn" onclick="toggleDarkMode()">
-          <div class="toggle-slider"></div>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
 
-      <div class="timer">
-        <div class="outer-ring-path"></div>
+
+  <title>Quad tech</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div id="hod"><img src="public/hodlinfo_logo.png" alt="" /></div>
+    <div id="drop-dwn">
+      <select>
+        <option value="option1" id="option">INR</option>
+      </select>
+      <select>
+        <option value="option1" id="option">BTC</option>
+      </select>
+      <select>
+        <option value="option1" id="option">BUY BTC</option>
+      </select>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle-btn" onclick="toggleDarkMode()">
+        <div class="toggle-slider"></div>
       </div>
     </div>
 
-    <div class="btn">
-      <button type="button">
-        <i class="fa-brands fa-telegram"></i>
-        <p>Connect Telegram</p>
-      </button>
+    <div class="timer">
+      <div class="outer-ring-path"></div>
     </div>
-    <div class="number-container">
-      <div class="number-box">
-        <span>0.84%</span>
-        <div class="subheading">
-          <span>5 Mins</span>
-        </div>
-      </div>
-      <div class="number-box">
-        <span>0.06%</span>
-        <div class="subheading">
-          <span>1 Hour</span>
-        </div>
-      </div>
-      <div class="number-box">
-        <div class="head">
-          <span>Best Price To Trade</span>
-        </div>
-        <span id="big">
-          <span>&#8377;36,36,032</span>
+  </div>
 
-          <div class="subheading">
-            <span>Averge BTC/INR net price including commission</span>
-          </div>
-        </span>
-      </div>
-      <div class="number-box">
-        <span>10.77%</span>
-
-        <div class="subheading">
-          <span>1 Day2 </span>
-        </div>
-      </div>
-      <div class="number-box">
-        <span>11.1% </span>
-        <div class="subheading">
-          <span>5 Mins</span>
-        </div>
+  <div class="btn">
+    <button type="button">
+      <i class="fa-brands fa-telegram"></i>
+      <p>Connect Telegram</p>
+    </button>
+  </div>
+  <div class="number-container">
+    <div class="number-box">
+      <span>0.84%</span>
+      <div class="subheading">
+        <span>5 Mins</span>
       </div>
     </div>
+    <div class="number-box">
+      <span>0.06%</span>
+      <div class="subheading">
+        <span>1 Hour</span>
+      </div>
+    </div>
+    <div class="number-box">
+      <div class="head">
+        <span>Best Price To Trade</span>
+      </div>
+      <span id="big">
+        <span>&#8377;36,36,032</span>
 
-    <table>
-      <tr>
-        <th>#</th>
-        <th>Platform</th>
-        <th>Last Traded Price</th>
-        <th>Buy/sell Price</th>
-        <th>Difference</th>
-        <th>Savings</th>
-      </tr>
+        <div class="subheading">
+          <span>Averge BTC/INR net price including commission</span>
+        </div>
+      </span>
+    </div>
+    <div class="number-box">
+      <span>10.77%</span>
 
-      <tr>
-        <td>1</td>
-        <td class="imgWithText"><img src="././public/wazix.png" class="img" alt="" /><span>WazirX</span></td>
-        <td>₹ 36,09,775</td>
-        <td>₹ 36,52,200 / ₹ 36,55,154</td>
-        <td>-2.60 %</td>
-        <td>▼ ₹ 96,295</td>
-      </tr>
+      <div class="subheading">
+        <span>1 Day2 </span>
+      </div>
+    </div>
+    <div class="number-box">
+      <span>11.1% </span>
+      <div class="subheading">
+        <span>5 Mins</span>
+      </div>
+    </div>
+  </div>
 
-      <tr>
-        <td>2</td>
-        <td class="imgWithText"><img src="././public/bitbns.png" alt="" /><span>Bitbns</span></td>
-        <td>₹ 41,49,999</td>
-        <td>₹ 41,09,000 / ₹ 41,49,999</td>
-        <td>11.98 %</td>
-        <td>▲ ₹ 4,43,928</td>
-      </tr>
 
-      <tr>
-        <td>3</td>
-        <td class="imgWithText"><img src="././public/colodax.png" alt="" /><span>Colodax</span></td>
-        <td>₹ 34,62,281</td>
-        <td>₹ 34,44,970 / ₹ 42,23,984</td>
-        <td>-6.58 %</td>
-        <td>▼ ₹ 2,43,788</td>
-      </tr>
 
-      <tr>
-        <td>4</td>
-        <td class="imgWithText"><img src="././public/zebpay.png" alt="" /><span>Zebpay</span> </td>        
-        <td>₹ 36,43,800</td>
-        <td>₹ 36,50,000 / ₹ 36,43,800</td>
-        <td>-1.68 %</td>
-        <td>▼ ₹ 62,270</td>
-      </tr>
+  <div class="fiat-crypto-table table-responsive">
+    <table class="table table-borderless text-center">
+      <thead>
+        <tr>
+          <th>
+            <h4><span class="pointer">#</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Platform</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Last Traded Price</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Buy / Sell Price</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Difference</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Savings</span></h4>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="align-middle">
+            <h4 class="table-text">1</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><img src="/public/wazix.png" class="imgWithText"><span
+                class="exchange-name ">WazirX</span></h4>
 
-      <tr>
-        <td>5</td>
-        <td class="imgWithText"><img src="././public/coibdcx.png" alt="" /><span>CoinDCX</span> </td>    
-        <td>₹ 36,64,499</td>
-        <td>₹ 36,41,703 / ₹ 36,64,499</td>
-        <td>-1.12 %</td>
-        <td>▼ ₹ 41,570</td>
-      </tr>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text">₹ 37,69,503</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><span>₹ 37,70,504 / ₹ 37,86,874</span></h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">-1.73 %</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">▼ ₹ 66,507</h4>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-middle">
+            <h4 class="table-text">2</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><img src="/public/bitbns.png" class="exchange-logo"><span class="exchange-name "
+                class="imgWithText">Bitbns</span></h4>
+            </a>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text">₹ 42,50,001</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><span>₹ 42,50,000 / ₹ 43,49,999</span></h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-green">10.79 %</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-green">▲ ₹ 4,13,991</h4>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-middle">
+            <h4 class="table-text">3</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><img src="/public/coibdcx.png" alt="" class="imgWithText">
+              <span class="exchange-name ">Colodax</span>
+            </h4>
+            </a>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text">₹ 36,10,354</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><span>₹ 35,92,302 / ₹ 44,04,633</span></h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">-5.88 %</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">▼ ₹ 2,25,655</h4>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-middle">
+            <h4 class="table-text">4</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><img src="./public/colodax.png" class="exchange-logo" class="imgWithText"><span
+                class="exchange-name ">Zebpay</span></h4>
+            </a>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text">₹ 37,83,000</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><span>₹ 37,88,010 / ₹ 37,83,000</span></h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">-1.38 %</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">▼ ₹ 53,010</h4>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-middle">
+            <h4 class="table-text">5</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><img src="././public/zebpay.png" class="exchange-logo" class="imgWithText"><span
+                class="exchange-name ">CoinDCX</span></h4>
+            </a>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text">₹ 37,67,192</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text"><span>₹ 37,67,192 / ₹ 38,03,466</span></h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">-1.79 %</h4>
+          </td>
+          <td class="align-middle">
+            <h4 class="table-text color-red">▼ ₹ 68,817</h4>
+          </td>
+        </tr>
+      </tbody>
     </table>
+  </div>
 
-    <script>
-      // Function to toggle dark mode
-      function toggleDarkMode() {
-        const body = document.body;
-        body.classList.toggle("dark-mode");
-      }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const timerElement = document.querySelector(".timer");
-        //   const inner =document.querySelector('.inner-ring');
-        let seconds = 60;
-        function updateTimer() {
-          timerElement.textContent = seconds;
-          seconds--;
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+    }
 
-          if (seconds < 0) {
-            seconds = 60;
-          }
+    document.addEventListener("DOMContentLoaded", function () {
+      const timerElement = document.querySelector(".timer");
+      //   const inner =document.querySelector('.inner-ring');
+      let seconds = 60;
+      function updateTimer() {
+        timerElement.textContent = seconds;
+        seconds--;
+
+        if (seconds < 0) {
+          seconds = 60;
         }
-        updateTimer();
-        const timerElementInterval = setInterval(updateTimer, 1000);
+      }
+      updateTimer();
+      const timerElementInterval = setInterval(updateTimer, 1000);
 
-        timer = document.querySelector;
-      });
+      timer = document.querySelector;
+    });
 
-      //move slices to original position without animation.
-    </script>
-  </body>
+    //move slices to original position without animation.
+  </script>
+</body>
+
 </html>
